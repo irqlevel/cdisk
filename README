@@ -1,7 +1,7 @@
 qcow-vdisk
 ==========
 
-qcow-vdisk - linux block device with data backend in a file in QCOW2 format.
+qcow-vdisk - linux block device with backend in a file in QCOW2 format.
 
 BUILD:
 
