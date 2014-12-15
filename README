@@ -1,7 +1,7 @@
-cloud-disk
+qcow-vdisk
 ==========
 
-cloud disk - linux block device with data backend spread across multiple servers.
+qcow-vdisk - linux block device with data backend in a file in QCOW2 format.
 
 BUILD:
 
@@ -12,16 +12,10 @@ BUILD CLEAN:
 make clean
 
 INSTALL:
-	on client-side:
-		sudo insmod bin/cdisk.ko
-	on server-side:
-		sudo insmod bin/cdisk_srv.ko
+	sudo insmod bin/cdisk.ko
 
 UNINSTALL:
-	on client-side:
-		sudo rmmod cdisk.ko
-	on server-side:
-		sudo rmmod cdisk_srv.ko
+	sudo rmmod cdisk.ko
 
 USAGE (client-side):
 
@@ -54,6 +48,6 @@ LOGGING:
 TESTS:
 
 sudo python  tests/qcow2_fio.py
-	"this test requires fio installed"
+	"this test requires FIO installed"
 
 
